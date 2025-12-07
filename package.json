@@ -1,0 +1,28 @@
+{
+	"name": "chamalia",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "npm run build && wrangler dev",
+		"postinstall": "nuxt prepare",
+		"deploy": "npm run build && wrangler deploy",
+		"cf-typegen": "wrangler types"
+	},
+	"dependencies": {
+		"@nuxtjs/i18n": "^10.2.1",
+		"@pinia/nuxt": "^0.11.3",
+		"axios": "^1.13.2",
+		"nuxt": "^4.2.1",
+		"vue": "^3.5.25",
+		"vue-router": "^4.6.3"
+	},
+	"devDependencies": {
+		"nitro-cloudflare-dev": "^0.2.2",
+		"nitropack": "^2.12.9",
+		"sass-embedded": "^1.93.3",
+		"wrangler": "^4.53.0"
+	}
+}
