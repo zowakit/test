@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Store Categories</h1>
+    <h1>Store porn Categories</h1>
     
     <div v-if="pending">Loading categories...</div>
 
