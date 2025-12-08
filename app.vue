@@ -25,7 +25,7 @@ interface Category {
 
 // We use useFetch which is SSR-friendly.
 // It runs on the server first, then hydrates on the client.
-const { data: categories, pending, error } = await useFetch<Category[]>('/api/categories?lang=en', {
+const { data: categories, pending, error } = await useFetch<Category[]>('/api/categories', {
   lazy: false, // Wait for data before rendering (better for SEO)
   transform: (data) => {
     // Optional: Log here to see it in the browser console
